@@ -17,11 +17,6 @@ const questions = [
             return true;
         },
     },
-    //{
-    //     name: 'app',
-    //     message: "Give us a name of your GitHub app?",
-    //     type: 'input',
-    // },
     {
         name: 'title',
         message: "Give your project a title.",
@@ -61,17 +56,6 @@ const questions = [
         message: 'Any co-creators or contributions?',
         type: 'input',
     },
-    // {
-    //     name: 'license',
-    //     message: 'Do you want to add a license?',
-    //     type: 'list',
-    //     choices: ['yes', 'no'],
-    //     validate: function (answer) {
-    //         if (answer === 'no') {
-    //             return;
-    //         };
-    //     },
-    // },
     {
         name: 'license',
         message: "Choose a license for your project.",
