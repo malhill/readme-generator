@@ -1,8 +1,8 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if(data.license === 'none') {
-    console.log(data.badge);
+  if(response.license === 'none') {
+    // console.log(data.badge);
     return '';
     } else {
       return `![alt text](https://shields.io/badge/license-${badge}-green)`;
@@ -12,7 +12,7 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if(data.license === 'no') {
+  if(response.license === 'no') {
     return "";
     } if (data.license === 'yes'){
     return renderLicenseLink();
@@ -28,8 +28,9 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `
-# Title
+
+  let markdown = `
+# <center aligh=center>Title</center>
 ${data.title}
 
 ![github profile](github.com/${data.username}?tab=repositories)
@@ -48,6 +49,8 @@ ${data.collaborators}
 ${renderLicenseSection()}
 
 `;
+
+return markdown;
 }
 
 module.exports = generateMarkdown;

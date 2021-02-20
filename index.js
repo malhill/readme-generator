@@ -8,58 +8,82 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 const questions = [
     {
         name: 'username',
-        message: 'What is your Github username? no @ needed.',
+        message: 'What is your Github username?',
         type: 'input',
+        validate: function (answer) {
+            if (answer === '') {
+                return "username required.";
+            }
+            return true;
+        },
     },
-    // {
+    //{
     //     name: 'app',
     //     message: "Give us a name of your GitHub app?",
     //     type: 'input',
     // },
     {
         name: 'title',
-        message: "Give your project a title!",
+        message: "Give your project a title.",
         type: 'input',
+        validate: function (answer) {
+            if (answer === '') {
+                return "Title required!";
+            }
+            return true;
+        },
     },
     {
         name: 'description',
         message: "Please, describe the idea behind your project.",
         type: 'input',
+        validate: function (answer) {
+            if (answer === '') {
+                return "Please provide a brief description";
+            }
+            return true;
+        },
     },
     {
         name: 'installation',
         message: 'What programs did you use?',
         type: 'checkbox',
         choices: ['HTML', 'CSS', 'JS', 'NODE.JS'],
+        validate: function (answer) {
+            if (answer.length < 1) {
+                return "Please select one.";
+            }
+            return true;
+        },
     },
     {
         name: 'collaborators',
         message: 'Any co-creators or contributions?',
         type: 'input',
     },
+    // {
+    //     name: 'license',
+    //     message: 'Do you want to add a license?',
+    //     type: 'list',
+    //     choices: ['yes', 'no'],
+    //     validate: function (answer) {
+    //         if (answer === 'no') {
+    //             return;
+    //         };
+    //     },
+    // },
     {
         name: 'license',
-        message: 'Do you want to add a license?',
+        message: "Choose a license for your project.",
         type: 'list',
-        choices: ['yes', 'no'],
-    },
-    {
-    // validate: function(answer) {
-    //     if(questions.license === 'no') {
-    //         break;
-    //     } 
-    // },
-    name: 'badge',
-    message: "Choose a license/badge for your project.",
-    type: 'list',
-    choices: ['Apache', 'MIT', 'GNU LGPLv3', 'GNU AGPLv3', 'Mozilla Public License 2.0', 'none'],
+        choices: ['Apache', 'MIT', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'none'],
     },
 ];
 
 // Description, Installation, Usage, Contributing, and Tests
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { 
+function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (error) => error ? console.error(error) : console.log('success'))
 }
 
