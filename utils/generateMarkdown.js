@@ -1,40 +1,42 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if(response.license === 'none') {
+  if (license === 'none') {
     // console.log(data.badge);
     return '';
-    } else {
-      return `![alt text](https://shields.io/badge/license-${badge}-green)`;
-    };  
+  } else {
+    return `![${license} Badge](https://shields.io/badge/license-${license}-green)`;
+  };
 };
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if(response.license === 'no') {
+  if (license === 'no') {
     return "";
-    } if (data.license === 'yes'){
-    return renderLicenseLink();
-    };
+  } else {
+    return `This project is licensed can be viewed by: [${license} Badge](https://choosealicense.com/licenses/${license})`;
+  };
 };
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  renderLicenseBadge();
-  renderLicenseLink();
-}
+  return `## License
+
+  ${renderLicenseBadge(license)}
+  ${renderLicenseLink(license)}
+  `;
+};
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
 
   let markdown = `
-# <center aligh=center>Title</center>
-${data.title}
+# <center align=center>${data.title}</center>
 
-![github profile](github.com/${data.username}?tab=repositories)
-![github app](${data.username}.github.io/${data.app}/)
+* [github profile](https://github.com/${data.username}?tab=repositories)
+* [github app](${data.username}.github.io/${data.app}/)
 
 ## Description
 ${data.description}
@@ -45,12 +47,11 @@ ${data.installation}
 ## Collaborators
 ${data.collaborators}
 
-## License
-${renderLicenseSection()}
+${renderLicenseSection(data.license)}
 
 `;
 
-return markdown;
+  return markdown;
 }
 
 module.exports = generateMarkdown;
