@@ -1,4 +1,4 @@
-# <center>README generator
+# <center h1 align=center>README generator</center>
 
 ![alt text]( "Readme GIF")
 
