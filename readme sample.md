@@ -1,21 +1,21 @@
 
-# <center align=center>Hello</center>
+# <center align=center>README!</center>
 
-* [github profile](https://github.com/malhill?tab=repositories)
-* [github app](malhill.github.io/undefined/)
+* [github profile](https://github.com/hillmal?tab=repositories)
+* [github app](hillmal.github.io/undefined/)
 
 ## Description
-Jello
+to make readmes easier to make
 
 ## Installation
-HTML
+JS,NODE.JS
 
 ## Collaborators
-Mello
+NONE
 
 ## License
 
-  ![Apache Badge](https://shields.io/badge/license-Apache-green)
-  This project is licensed can be viewed by: [Apache Badge](https://choosealicense.com/licenses/Apache)
+  ![MIT Badge](https://shields.io/badge/license-MIT-green)
+  This project is licensed can be viewed by: [MIT Badge](https://choosealicense.com/licenses/MIT)
   
 

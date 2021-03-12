@@ -1,6 +1,6 @@
 # <center>README generator
 
-![alt text]( "Readme GIF")
+![alt text](./assets/readmevideo.mp4 "Readme GIF")
 
 * ![GitHub Repository](https://github.com/malhill/readme-generator)
 
