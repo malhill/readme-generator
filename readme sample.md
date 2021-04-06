@@ -1,21 +1,21 @@
 
-# <center align=center>README!</center>
+# <center align=center>title</center>
 
 * [github profile](https://github.com/hillmal?tab=repositories)
 * [github app](hillmal.github.io/undefined/)
 
 ## Description
-to make readmes easier to make
+ground breaking work
 
 ## Installation
-JS,NODE.JS
+HTML,CSS,NODE.JS
 
 ## Collaborators
-NONE
+none
 
 ## License
 
-  ![MIT Badge](https://shields.io/badge/license-MIT-green)
-  This project is licensed can be viewed by: [MIT Badge](https://choosealicense.com/licenses/MIT)
+  ![GNU LGPLv3 Badge](https://shields.io/badge/license-GNU LGPLv3-green)
+  This project is licensed can be viewed by: [GNU LGPLv3 Badge](https://choosealicense.com/licenses/GNU LGPLv3)
   
 
