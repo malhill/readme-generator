@@ -1,8 +1,7 @@
 
 # <center align=center>title</center>
 
-* [github profile](https://github.com/hillmal?tab=repositories)
-* [github app](hillmal.github.io/undefined/)
+* [github profile](https://github.com/malhill/readme-generator)
 
 ## Description
 ground breaking work
