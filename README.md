@@ -1,6 +1,6 @@
 # <center h1 align=center>README generator</center>
 
-![alt text](./assets/readme "Readme GIF")
+![Demo](./assets/readmeGif.gif "Readme GIF")
 
 * ![GitHub Repository](https://github.com/malhill/readme-generator)
 
